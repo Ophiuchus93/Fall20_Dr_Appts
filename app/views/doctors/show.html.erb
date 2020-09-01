@@ -1,0 +1,4 @@
+<h1>Dr. <%= @doctor.full_name %></h1>
+<hr>
+<%= link_to "Delete Doctor", @doctor, method: :delete %>
+<%= link_to "Back", doctors_path %>

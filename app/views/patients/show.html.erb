@@ -1,4 +1,8 @@
 <h1>Patient: <%= @patient.full_name %></h1>
 <hr>
+<br>
+<%= link_to "Appointments", patient_appts_path(@patient) %>
+<br>
 <%= link_to "Delete Patient", @patient, method: :delete %>
+<br>
 <%= link_to "Back", patients_path %>
